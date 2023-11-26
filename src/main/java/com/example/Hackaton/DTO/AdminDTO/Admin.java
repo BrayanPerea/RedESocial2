@@ -1,0 +1,39 @@
+package com.example.Hackaton.DTO.AdminDTO;
+
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "Admin")
+public class Admin {
+
+    @Id
+    private int dni;
+
+    @Column
+    private String name;
+
+    @Column
+    private String lastName;
+
+    @Column
+    private String password;
+
+    @Column
+    private String country;
+
+    @Column
+    private String region;
+
+    @Column
+    private int age;
+}
